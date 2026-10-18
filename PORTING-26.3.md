@@ -154,7 +154,7 @@ cd ../smoketest && ./gradlew runGameTestServer
 ## Keeping it rebased
 
 Remotes: `origin` = KubeJS-Mods/KubeJS, `wolfie` = wolfieboy09/kubejs (PR #1189's head branch `2603`).
-The port is committed on `26.3` on top of `wolfie/2603` (local only, not pushed). To update:
+The port is on `26.3` on top of `wolfie/2603`, published at [zoom-packers/kubejs](https://github.com/zoom-packers/kubejs/tree/26.3) (remote `zp`). Jars are released on [zoom-packers/zp5-mods](https://github.com/zoom-packers/zp5-mods/releases/tag/kubejs-26.3-8.1.0-port.1). To update:
 
 ```
 git fetch origin wolfie
