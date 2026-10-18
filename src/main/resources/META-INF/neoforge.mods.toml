@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[2,)"
-issueTrackerURL = "https://kubejs.com/support?source=kubejs&mc=2101&loader=neoforge"
+issueTrackerURL = "https://kubejs.com/support?source=kubejs&mc=2603&loader=neoforge"
 license = "GNU LGPLv3"
 
 [[mods]]
@@ -52,10 +52,12 @@ side = "CLIENT"
 
 [[dependencies.kubejs]]
 modId = "betteradvancedtooltips"
-type = "optional"
+# Required on both sides: TextIcons, KubeJSCommands and ChangesForChat load BAT classes on the server too
+# (matches the Modrinth listing, which already marks BAT as required)
+type = "required"
 versionRange = "[${batVersion},)"
 ordering = "BEFORE"
-side = "CLIENT"
+side = "BOTH"
 
 [[mixins]]
 config = "kubejs.mixins.json"
